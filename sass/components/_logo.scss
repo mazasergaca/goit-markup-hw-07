@@ -1,0 +1,17 @@
+.logo {
+  font-family: raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  @extend %link;
+
+  color: $accent-color;
+
+  &--black {
+    color: $primary-black-color;
+  }
+
+  &--white {
+    color: $primary-white-color;
+  }
+}

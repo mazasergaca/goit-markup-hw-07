@@ -1,0 +1,46 @@
+.feature-section {
+  @extend %section;
+}
+.feature-container {
+  @extend %container;
+}
+
+.feature-section__title {
+  @extend %visually-hidden;
+}
+
+.feature-section__list {
+  display: flex;
+  @extend %list;
+}
+
+.feature-section__item {
+  width: 270px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.feature-section__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: $secondary-color;
+}
+
+.feature-section__name {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.71;
+  text-transform: uppercase;
+
+  color: $primary-black-color;
+}
+
+.feature-section__text {
+  font-size: 14px;
+  line-height: 1.7;
+}
